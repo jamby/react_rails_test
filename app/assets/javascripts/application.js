@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require react
-//= require react-server
 //= require react_ujs
-//= require ./components/test_component
+
+var React = window.ReactFoo = window.React = global.React = require('react');
+var ReactDOM = window.ReactDOM = global.ReactDOM = require('react-dom');
+var ReactDOMServer = window.ReactDOMServer = global.ReactDOMServer = require('react-dom/server');
+
+import TestComponent from './components/test_component.jsx';
+window.TestComponent = TestComponent;
