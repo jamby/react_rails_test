@@ -4,6 +4,7 @@ import autobind from 'autobind-decorator';
 @autobind
 class TestComponent extends React.Component {
   render() {
+    console.log(window.time);
     return (
       <div>
         Hello again!
@@ -13,3 +14,4 @@ class TestComponent extends React.Component {
 }
 
 module.exports = TestComponent;
+export default TestComponent;
